@@ -438,7 +438,7 @@ img {
 .skills__header {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-2);
   cursor: pointer;
 }
 
@@ -840,8 +840,12 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
+  color: var(--container-color);
   margin-top: var(--mb-3);
+}
+
+.footer__link{
+  margin: auto;
 }
 
 .footer__title,
@@ -991,7 +995,7 @@ img {
   }
 
   .section {
-    padding: 6rem 0 4rem;
+    padding: 2rem 4rem;
   }
 
   .section__subtitle {
@@ -1117,7 +1121,7 @@ img {
   }
 
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__bg {

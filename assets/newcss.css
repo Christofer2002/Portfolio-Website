@@ -135,10 +135,11 @@ img {
   height: auto;
 }
 .section {
- 
+  padding: 0rem 2rem;
 }
 .section__title {
   font-size: var(--h1-font-size);
+  margin-top: 2rem;
 }
 
 .section__subtitle {
@@ -438,7 +439,7 @@ img {
 .skills__header {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-2-5);
   cursor: pointer;
 }
 

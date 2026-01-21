@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /var/www/html
+            cd /var/www/html/Portfolio-Website
             git pull origin main
             sudo systemctl reload nginx

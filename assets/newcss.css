@@ -430,6 +430,200 @@ img {
   justify-content: center;
 }
 
+/*===================== EXPERIENCE =====================*/
+
+.experience__timeline {
+  position: relative;
+  display: grid;
+  row-gap: 3rem;
+  padding: 2rem 0;
+}
+
+/* Línea central */
+.experience__timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--first-color-lighter);
+}
+
+/* Item */
+.experience__item {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+/* Alternar lados */
+.experience__item:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.experience__item:nth-child(even) {
+  justify-content: flex-end;
+}
+
+/* Card */
+.experience__content {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: calc(50% - 2rem);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Punto central */
+.experience__item::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Text */
+.experience__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.experience__company {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+}
+
+.experience__date {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin-bottom: var(--mb-1);
+}
+
+/* List */
+.experience__list {
+  display: grid;
+  row-gap: var(--mb-0-75);
+}
+
+.experience__list li {
+  position: relative;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.experience__list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--first-color);
+}
+
+/*===================== EDUCATION =====================*/
+
+.education__container {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.education__card {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.education__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.education__title {
+  font-size: var(--h3-font-size);
+}
+
+.education__institution {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  margin-top: var(--mb-0-5);
+}
+
+.education__date {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin-bottom: var(--mb-0-75);
+}
+
+.education__description {
+  font-size: var(--normal-font-size);
+  line-height: 1.6;
+}
+
+/*===================== BADGES =====================*/
+
+.education__badge {
+  font-size: var(--smaller-font-size);
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.75rem;
+  font-weight: var(--font-medium);
+  white-space: nowrap;
+}
+
+/* Badge types */
+.badge--degree {
+  background-color: var(--first-color-lighter);
+  color: var(--first-color);
+}
+
+.badge--diploma {
+  background-color: hsl(var(--hue-color), 80%, 90%);
+  color: var(--first-color);
+}
+
+.badge--technical {
+  background-color: hsl(var(--hue-color), 60%, 92%);
+  color: var(--first-color);
+}
+
+.badge--current {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
+/*===================== RESPONSIVE =====================*/
+@media screen and (max-width: 768px) {
+  .experience__timeline::before {
+    left: 1rem;
+  }
+
+  .experience__item {
+    justify-content: flex-start !important;
+    padding-left: 2rem;
+  }
+
+  .experience__item::before {
+    left: 1rem;
+  }
+
+  .experience__content {
+    width: 100%;
+  }
+}
+
 /*===================== SKILLS =========================*/
 
 .skills__container {
@@ -841,11 +1035,11 @@ img {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--container-color);
+  color: var(--container-color) !important;
   margin-top: var(--mb-3);
 }
 
-.footer__link{
+.footer__link {
   margin: auto;
 }
 

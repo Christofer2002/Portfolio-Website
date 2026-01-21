@@ -24,7 +24,7 @@ The personal portfolio website showcases my skills, projects, and experiences as
 
 To view the website locally or make modifications, follow these steps:
 
-1. Clone the repository: `git clone [repository URL]`
+1. Clone the repository: `git clone https://github.com/Christofer2002/Portfolio-Website`
 2. Open the project folder in your preferred code editor.
 3. Open the `index.html` file in a web browser to view the website.
 

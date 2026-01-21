@@ -181,3 +181,107 @@ const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+/* ===================== I18N / Language Toggle ===================== */
+// Load translations from assets/i18n.json, provide language toggle and persist selection
+let translations = {};
+const langToggle = document.getElementById("lang-toggle");
+
+function setElementTextPreserveIcon(el, text) {
+  if (!el) return;
+  // If element has no element children, replace textContent entirely
+  const hasElementChild = Array.from(el.childNodes).some((n) => n.nodeType === Node.ELEMENT_NODE);
+  if (!hasElementChild) {
+    el.textContent = text;
+    return;
+  }
+
+  // Try to replace an existing text node (commonly the first child)
+  for (let i = 0; i < el.childNodes.length; i++) {
+    const n = el.childNodes[i];
+    if (n.nodeType === Node.TEXT_NODE) {
+      n.nodeValue = text;
+      return;
+    }
+  }
+
+  // Otherwise insert a text node at the beginning
+  el.insertBefore(document.createTextNode(text), el.firstChild);
+}
+
+function setLanguage(lang) {
+  if (!translations[lang]) return;
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    const value = translations[lang][key];
+    if (!value) return;
+
+    // Inputs/textarea: set placeholder when appropriate
+    const tag = el.tagName.toLowerCase();
+    if (tag === "input" || tag === "textarea") {
+      el.placeholder = value;
+      return;
+    }
+
+    // Preserve icons/elements inside buttons/anchors
+    setElementTextPreserveIcon(el, value);
+  });
+
+  if (langToggle) langToggle.textContent = lang === "en" ? "ES" : "EN";
+  localStorage.setItem("language", lang);
+
+  // Update CV download link href if provided in translations
+  try {
+    const cvLink = document.getElementById("cv-download");
+    if (cvLink && translations[lang] && translations[lang].cv_href) {
+      cvLink.setAttribute("href", translations[lang].cv_href);
+    }
+  } catch (e) {
+    // ignore
+  }
+}
+
+// Initialize translations
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("assets/i18n.json")
+    .then((r) => r.json())
+    .then((data) => {
+      translations = data;
+      const saved = localStorage.getItem("language");
+      if (saved && translations[saved]) {
+        setLanguage(saved);
+        return;
+      }
+
+      // Detect browser language (prefer 'es' if startsWith 'es')
+      const navLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      const defaultLang = navLang.startsWith("es") ? "es" : "en";
+      setLanguage(defaultLang);
+    })
+    .catch((err) => {
+      console.warn("Failed to load translations via fetch:", err);
+      // Fallback to inline translations injected in HTML (useful when opening file://)
+      if (window && window.__I18N_INLINE) {
+        translations = window.__I18N_INLINE;
+        const saved = localStorage.getItem("language");
+        if (saved && translations[saved]) {
+          setLanguage(saved);
+        } else {
+          const navLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+          const defaultLang = navLang.startsWith("es") ? "es" : "en";
+          setLanguage(defaultLang);
+        }
+        return;
+      }
+      console.error("Failed to load translations:", err);
+    });
+
+  if (langToggle) {
+    langToggle.addEventListener("click", () => {
+      const current = localStorage.getItem("language") || "en";
+      const next = current === "en" ? "es" : "en";
+      setLanguage(next);
+    });
+  }
+});

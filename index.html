@@ -11,43 +11,56 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 </head>
 
-<body>
+<body oncontextmenu="return false">
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">Christofer Chaves</a>
+  <a href="#" class="nav__logo" data-i18n="logo_name">Christofer Chaves</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item">
             <a href="#home" class="nav__link active-link">
-              <i class="uil uil-estate nav__icon"></i>Home
+              <i class="uil uil-estate nav__icon"></i><span data-i18n="nav_home">Home</span>
             </a>
           </li>
           <li class="nav__item">
             <a href="#experience" class="nav__link">
-              <i class="uil uil-user nav__icon"></i>Experience
+              <i class="uil uil-user nav__icon"></i><span data-i18n="nav_experience">Experience</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="uil uil-user nav__icon"></i><span data-i18n="nav_education">Education</span>
             </a>
           </li>
           <li class="nav__item">
             <a href="#skills" class="nav__link">
-              <i class="uil uil-file-alt nav__icon"></i>Skills
+              <i class="uil uil-file-alt nav__icon"></i><span data-i18n="nav_skills">Skills</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#certifications" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i><span data-i18n="nav_certifications">Certifications</span>
             </a>
           </li>
           <li class="nav__item">
             <a href="#portfolio" class="nav__link">
-              <i class="uil uil-scenery nav__icon"></i>Projects
+              <i class="uil uil-scenery nav__icon"></i><span data-i18n="nav_projects">Projects</span>
             </a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">
-              <i class="uil uil-message nav__icon"></i>Contact-Me
+              <i class="uil uil-message nav__icon"></i><span data-i18n="nav_contact">Contact-Me</span>
             </a>
           </li>
         </ul>
         <i class="uil uil-times nav__close" id="nav-close"></i>
       </div>
       <div class="nav__btns">
-        <!-- Theme change button -->
+        <!-- Dark mode -->
         <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+        <!-- Language toggle -->
+        <button class="lang-toggle" id="lang-toggle">ES</button>
 
         <div class="nav__toggle" id="nav-toggle">
           <i class="uil uil-apps"></i>
@@ -105,25 +118,24 @@
             </div>
 
             <div class="about__buttons">
-              <a download="" href="assets\CV Christofer Chaves Pauth EN.pdf" class="button button--flex">
+              <a id="cv-download" download="" href="assets/CV Christofer Chaves Pauth EN.pdf" class="button button--flex" data-i18n="download_cv">
                 Download CV<i class="fas fa-download button__icon"></i>
               </a>
             </div>
           </div>
           <div class="home__data">
-            <h1 class="home__title">Hi, I'm Christofer Chaves</h1>
-            <h3 class="home__subtitle">
+            <h1 class="home__title" data-i18n="home_title">Hi, I'm Christofer Chaves</h1>
+            <h3 class="home__subtitle" data-i18n="home_subtitle">
               Information System Engineering
             </h3>
-            <p class="home__description">
+            <p class="home__description" data-i18n="home_description">
               Systems Engineering professional with hands-on experience in web development, focused on enhancing system
-              usability and driving continuous improvements. Highly proficient in
-              <strong>WordPress, ReactJs, JavaScript, Bootstrap, C# .NET Core, ORM's, and Postgres with strong knowledge
-                of microservices and RESTful APIs, MVVM, MVC, Clean and Multitier Architecture</strong>, Skilled in
+              usability and driving continuous improvements. Highly proficient in WordPress, ReactJs, JavaScript, Bootstrap, C# .NET Core, ORM's, and Postgres with strong knowledge
+              of microservices and RESTful APIs, MVVM, MVC, Clean and Multitier Architecture, Skilled in
               using automation tools like Postman and project management platforms to streamline processes and deliver
               high-quality results.
             </p>
-            <a href="#contact" class="button button--flex">
+            <a href="#contact" class="button button--flex" data-i18n="contact_me_button">
               Contact me<i class="uil uil-message button__icon"></i>
             </a>
           </div>
@@ -132,7 +144,7 @@
         <div class="home__scroll">
           <a href="#about" class="home__scroll-button button--flex">
             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-            <span class="home__scroll-name">Scroll down</span>
+            <span class="home__scroll-name" data-i18n="home_scroll_name">Scroll down</span>
             <i class="uil uil-arrow-down home__scroll-arrow"></i>
           </a>
         </div>
@@ -141,24 +153,24 @@
 
     <!--===================== EXPERIENCE =====================-->
     <section class="experience section" id="experience">
-      <h2 class="section__title">Experience</h2>
-      <span class="section__subtitle">My professional journey</span>
+      <h2 class="section__title" data-i18n="experience_title">Experience</h2>
+      <span class="section__subtitle" data-i18n="experience_subtitle">My professional journey</span>
 
       <div class="experience__container container">
-        <div class="experience__timeline">
+          <div class="experience__timeline">
 
           <!-- Experience 1 -->
           <div class="experience__item">
             <div class="experience__content">
-              <h3 class="experience__title">Intern Full-Stack Software Developer</h3>
-              <span class="experience__company">Popular Seguros · San José, Costa Rica</span>
-              <span class="experience__date">Mar 2025 – Jan 2026</span>
+              <h3 class="experience__title" data-i18n="experience__title1">Intern Full-Stack Software Developer</h3>
+              <span class="experience__company" data-i18n="exp1_company">Popular Seguros · San José, Costa Rica</span>
+              <span class="experience__date" data-i18n="exp1_date">Mar 2025 – Jan 2026</span>
 
               <ul class="experience__list">
-                <li>Collaborated in the design and maintenance of Core KADSI and FCSE systems.</li>
-                <li>Led FCSE evolution, optimizing performance and scalability.</li>
-                <li>Built microservices using C# .NET Core, EF, React, and SASS.</li>
-                <li>Worked with Azure Service Bus, WebSockets, Cosmos DB, and Blob Storage.</li>
+                <li data-i18n="exp1_li_1">Collaborated in the design and maintenance of Core KADSI and FCSE systems.</li>
+                <li data-i18n="exp1_li_2">Led FCSE evolution, optimizing performance and scalability.</li>
+                <li data-i18n="exp1_li_3">Built microservices using C# .NET Core, EF, React, and SASS.</li>
+                <li data-i18n="exp1_li_4">Worked with Azure Service Bus, WebSockets, Cosmos DB, and Blob Storage.</li>
               </ul>
             </div>
           </div>
@@ -166,14 +178,14 @@
           <!-- Experience 2 -->
           <div class="experience__item">
             <div class="experience__content">
-              <h3 class="experience__title">Front-End Developer</h3>
-              <span class="experience__company">IDESPO · Heredia, Costa Rica</span>
-              <span class="experience__date">Feb 2023 – Jun 2024</span>
+              <h3 class="experience__title" data-i18n="experience__title2">Front-End Software Developer</h3>
+              <span class="experience__company" data-i18n="exp2_company">IDESPO · Heredia, Costa Rica</span>
+              <span class="experience__date" data-i18n="exp2_date">Feb 2023 – Jun 2024</span>
 
               <ul class="experience__list">
-                <li>Designed responsive interfaces with React, CSS, and Bootstrap.</li>
-                <li>Improved usability and navigation flow.</li>
-                <li>Enhanced performance and accessibility.</li>
+                <li data-i18n="exp2_li_1">Designed responsive interfaces with React, CSS, and Bootstrap.</li>
+                <li data-i18n="exp2_li_2">Improved usability and navigation flow.</li>
+                <li data-i18n="exp2_li_3">Enhanced performance and accessibility.</li>
               </ul>
             </div>
           </div>
@@ -181,14 +193,15 @@
           <!-- Experience 3 -->
           <div class="experience__item">
             <div class="experience__content">
-              <h3 class="experience__title">Educational Technology Administrative Assistant</h3>
-              <span class="experience__company">Santillana S.A · San José, Costa Rica</span>
-              <span class="experience__date">Nov 2022 – Feb 2023 · Nov 2023 – Feb 2024</span>
+              <h3 class="experience__title" data-i18n="experience__title3">Educational Technology Administrative Assistant</h3>
+              <span class="experience__company" data-i18n="exp3_company">Santillana S.A · San José, Costa Rica</span>
+              <span class="experience__date" data-i18n="exp3_date1">Nov 2022 – Feb 2023</span>
+              <span class="experience__date" data-i18n="exp3_date2">Nov 2023 – Feb 2024</span>
 
               <ul class="experience__list">
-                <li>Managed platforms impacting 10,000+ students.</li>
-                <li>Optimized access to academic data and reports.</li>
-                <li>Worked with regional teams across Central America.</li>
+                <li data-i18n="exp3_li_1">Managed platforms impacting 10,000+ students.</li>
+                <li data-i18n="exp3_li_2">Optimized access to academic data and reports.</li>
+                <li data-i18n="exp3_li_3">Worked with regional teams across Central America.</li>
               </ul>
             </div>
           </div>
@@ -199,28 +212,28 @@
 
     <!--===================== EDUCATION =====================-->
     <section class="education section" id="education">
-      <h2 class="section__title">Education</h2>
-      <span class="section__subtitle">Academic background</span>
+      <h2 class="section__title" data-i18n="education_title">Education</h2>
+      <span class="section__subtitle" data-i18n="education_subtitle">Academic background</span>
 
       <div class="education__container container grid">
 
         <!-- Education Card 1 -->
         <div class="education__card">
           <div class="education__header">
-            <h3 class="education__title">
+            <h3 class="education__title" data-i18n="edu1_title">
               Bachelor’s Degree in Information Systems
             </h3>
-            <span class="education__badge badge--current">Currently</span>
+            <span class="education__badge badge--current" data-i18n="edu1_badge">Currently</span>
           </div>
 
-          <span class="education__institution">
+          <span class="education__institution" data-i18n="edu1_institution">
             Universidad Nacional de Costa Rica
           </span>
-          <span class="education__date">
+          <span class="education__date" data-i18n="edu1_date">
             2026 – Present
           </span>
 
-          <p class="education__description">
+          <p class="education__description" data-i18n="edu1_description">
             Advanced licentiate-level program oriented toward system architecture,
             research methodologies, and enterprise-level solutions.
           </p>
@@ -229,20 +242,20 @@
         <!-- Education Card 2 -->
         <div class="education__card">
           <div class="education__header">
-            <h3 class="education__title">
+            <h3 class="education__title" data-i18n="edu2_title">
               Bachelor’s Degree in Information Systems
             </h3>
-            <span class="education__badge badge--degree">Degree</span>
+            <span class="education__badge badge--degree" data-i18n="edu2_badge">Degree</span>
           </div>
 
-          <span class="education__institution">
+          <span class="education__institution" data-i18n="edu2_institution">
             Universidad Nacional de Costa Rica
           </span>
-          <span class="education__date">
+          <span class="education__date" data-i18n="edu2_date">
             2021 – 2025
           </span>
 
-          <p class="education__description">
+          <p class="education__description" data-i18n="edu2_description">
             Comprehensive academic training focused on software engineering,
             databases, system analysis, and modern development methodologies.
           </p>
@@ -251,20 +264,20 @@
         <!-- Education Card 3 -->
         <div class="education__card">
           <div class="education__header">
-            <h3 class="education__title">
+            <h3 class="education__title" data-i18n="edu3_title">
               Diploma in Application Programming
             </h3>
-            <span class="education__badge badge--diploma">Diploma</span>
+            <span class="education__badge badge--diploma" data-i18n="edu3_badge">Diploma</span>
           </div>
 
-          <span class="education__institution">
+          <span class="education__institution" data-i18n="edu3_institution">
             Universidad Nacional de Costa Rica
           </span>
-          <span class="education__date">
+          <span class="education__date" data-i18n="edu3_date">
             2021 – 2024
           </span>
 
-          <p class="education__description">
+          <p class="education__description" data-i18n="edu3_description">
             Practice-oriented program emphasizing software development,
             algorithms, and programming best practices.
           </p>
@@ -273,20 +286,20 @@
         <!-- Education Card 4 -->
         <div class="education__card">
           <div class="education__header">
-            <h3 class="education__title">
+            <h3 class="education__title" data-i18n="edu4_title">
               Technical Degree in Business Informatics
             </h3>
-            <span class="education__badge badge--technical">Technical</span>
+            <span class="education__badge badge--technical" data-i18n="edu4_badge">Technical</span>
           </div>
 
-          <span class="education__institution">
+          <span class="education__institution" data-i18n="edu4_institution">
             Colegio Técnico Profesional de Upala
           </span>
-          <span class="education__date">
+          <span class="education__date" data-i18n="edu4_date">
             2018 – 2020
           </span>
 
-          <p class="education__description">
+          <p class="education__description" data-i18n="edu4_description">
             Technical education focused on business systems, IT foundations,
             and introductory programming concepts.
           </p>
@@ -298,8 +311,8 @@
     <!--===================== SKILLS =====================-->
 
     <section class="skills section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <span class="section__subtitle">My technical level</span>
+      <h2 class="section__title" data-i18n="skills_title">Skills</h2>
+      <span class="section__subtitle" data-i18n="skills_subtitle">My technical level</span>
 
       <div class="skills__container container grid">
         <div>
@@ -308,8 +321,8 @@
             <div class="skills__header">
               <i class="fas fa-pencil-ruler skills__icon"></i>
 
-              <div>
-                <h1 class="skills__title">Programming Languages & Frameworks</h1>
+                <div>
+                <h1 class="skills__title" data-i18n="skills_group1_title">Programming Languages & Frameworks</h1>
               </div>
               <i class="uil uil-angle-down skills__arrow"></i>
             </div>
@@ -361,7 +374,7 @@
             <div class="skills__header">
               <i class="fas fa-swatchbook skills__icon"></i>
               <div>
-                <h1 class="skills__title">Technologies</h1>
+                <h1 class="skills__title" data-i18n="skills_group2_title">Technologies</h1>
               </div>
 
               <i class="uil uil-angle-down skills__arrow"></i>
@@ -441,10 +454,60 @@
       </div>
     </section>
 
+    <!--===================== CERTIFICATIONS =====================-->
+    <section class="certifications section" id="certifications">
+      <h2 class="section__title" data-i18n="certifications_title">Certifications</h2>
+      <span class="section__subtitle" data-i18n="certifications_subtitle">Professional credentials</span>
+
+      <div class="certifications__container container grid">
+
+        <div class="certification__item">
+          <i class="uil uil-language certification__icon"></i>
+          <div>
+            <h3 class="certification__title1" data-i18n="certification__title1">Advanced English Certificate</h3>
+            <span class="certification__issuer">
+              Instituto Nacional de Aprendizaje (INA) · 2024
+            </span>
+          </div>
+        </div>
+
+        <div class="certification__item">
+          <i class="uil uil-users-alt certification__icon"></i>
+          <div>
+            <h3 class="certification__title">Scrum Fundamentals Certified (SFC)</h3>
+            <span class="certification__issuer">
+              SCRUMstudy · 2024
+            </span>
+          </div>
+        </div>
+
+        <div class="certification__item">
+          <i class="uil uil-shield-check certification__icon"></i>
+          <div>
+            <h3 class="certification__title">Endpoint Security</h3>
+            <span class="certification__issuer">
+              Cisco Networking Academy · 2024
+            </span>
+          </div>
+        </div>
+
+        <div class="certification__item">
+          <i class="uil uil-code-branch certification__icon"></i>
+          <div>
+            <h3 class="certification__title">Python Essentials</h3>
+            <span class="certification__issuer">
+              Cisco Networking Academy · 2024
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!--=================== Portfolio ===================-->
     <section class="portfolio section" id="portfolio">
-      <h2 class="section__title">Projects</h2>
-      <span class="section__subtitle">Most recent work</span>
+      <h2 class="section__title" data-i18n="portfolio_title">Projects</h2>
+      <span class="section__subtitle" data-i18n="portfolio_subtitle">Most recent work</span>
 
       <div class="portfolio__container container swiper-container">
         <div class="swiper-wrapper">
@@ -453,21 +516,19 @@
             <img src="assets/img/portfolio5.png" class="portfolio__img" />
 
             <div class="portfolio__data">
-              <h3 class="portfolio__title">
-                Sports Facilities Management Platform
-              </h3>
-              <p class="portfolio__description">
+              <h3 class="portfolio__title" data-i18n="portfolio1_title">Sports Facilities Management Platform</h3>
+              <p class="portfolio__description" data-i18n="portfolio1_description">
                 This project is a basic application developed in ReactJs that allows sports facility owners to manage
                 their bookings and add new facilities. It provides an intuitive and user-friendly interface for
                 efficient management of these spaces.
               </p>
               <a href="https://github.com/Christofer2002/Sports-Management"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio1_github">
                 GitHub Repository
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
               <a href="https://devbychris.com/sport-management/"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio1_live">
                 See Live
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
@@ -478,16 +539,14 @@
             <img src="assets/img/portfolio2.jpg" class="portfolio__img" />
 
             <div class="portfolio__data">
-              <h3 class="portfolio__title">
-                Dessert App Sales
-              </h3>
-              <p class="portfolio__description">
+              <h3 class="portfolio__title" data-i18n="portfolio2_title">Dessert App Sales</h3>
+              <p class="portfolio__description" data-i18n="portfolio2_description">
                 A dessert app for customers to browse and buy treats like cakes and cupcakes, with an admin panel to
                 manage orders and products. Built with Spring Boot, Kotlin, PostgreSQL, and Jetpack Compose, and tested
                 using Heroku and Firebase.
               </p>
               <a href="https://github.com/Christofer2002/Dessert-App-Sales/"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio2_github">
                 GitHub Repository (You can download apk here)
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
@@ -504,20 +563,18 @@
             <img src="assets/img/portfolio1.png" class="portfolio__img" />
 
             <div class="portfolio__data">
-              <h3 class="portfolio__title">
-                SegurosInfinite
-              </h3>
-              <p class="portfolio__description">
+              <h3 class="portfolio__title" data-i18n="portfolio3_title">SegurosInfinite</h3>
+              <p class="portfolio__description" data-i18n="portfolio3_description">
                 SegurosInfinite is a web platform designed for car insurance and policies. This project is developed
                 using C# .Net Core, Javascript, HTML, CSS, Rest API technologies, and MySQL for database management.
               </p>
               <a href="https://github.com/Christofer2002/SegurosInfinite"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio3_github">
                 GitHub Repository
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
               <a href="https://www.devbychris.com/SegurosInfinite/wwwroot/"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio3_live">
                 See Live
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
@@ -530,22 +587,20 @@
             <img src="assets/img/portfolio4.png" class="portfolio__img" />
 
             <div class="portfolio__data">
-              <h3 class="portfolio__title">
-                Virtual Catalog
-              </h3>
-              <p class="portfolio__description">
+              <h3 class="portfolio__title" data-i18n="portfolio4_title">Virtual Catalog</h3>
+              <p class="portfolio__description" data-i18n="portfolio4_description">
                 Virtual Catalog is a web-based platform designed to manage and showcase a catalog of products and
                 categories efficiently. The project incorporates role-based access control and user management for
                 streamlined product and category operations. Built with ASP.NET Core and React, it focuses on security,
                 scalability, and a seamless user experience.
               </p>
               <a href="https://github.com/Christofer2002/virtual-catalog"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio4_github">
                 GitHub Repository
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
               <a href="https://www.devbychris.com/virtual-catalog/"
-                class="button button--flex button--small portfolio__button">
+                class="button button--flex button--small portfolio__button" data-i18n="portfolio4_live">
                 See Live
                 <i class="uil uil-external-link-alt button__icon"></i>
               </a>
@@ -657,8 +712,8 @@
 
     <!--===================== Contact Me =====================-->
     <section class="contact section" id="contact">
-      <h2 class="section__title">Contact Me</h2>
-      <span class="section__subtitle">Get in touch</span>
+      <h2 class="section__title" data-i18n="contact_title">Contact Me</h2>
+      <span class="section__subtitle" data-i18n="contact_subtitle">Get in touch</span>
 
       <div class="contact__container container grid">
         <div>
@@ -666,7 +721,7 @@
             <i class="uil uil-calling contact__icon"></i>
 
             <div>
-              <h3 class="contact__title">Contact Me</h3>
+              <h3 class="contact__title" data-i18n="contact_info_title">Contact Me</h3>
               <span class="contact__subtitle"><a href="tel:6362243314"></a>+506 87677128</span>
             </div>
           </div>
@@ -675,7 +730,7 @@
             <i class="uil uil-envelope-minus contact__icon"></i>
 
             <div>
-              <h3 class="contact__title">Email</h3>
+              <h3 class="contact__title" data-i18n="contact_info_email">Email</h3>
               <span class="contact__subtitle">cristoferchaves36@gmail.com</span>
             </div>
           </div>
@@ -684,7 +739,7 @@
             <i class="uil uil-map-marker contact__icon"></i>
 
             <div>
-              <h3 class="contact__title">Location</h3>
+              <h3 class="contact__title" data-i18n="contact_info_location">Location</h3>
               <span class="contact__subtitle">Heredia, Costa Rica</span>
             </div>
           </div>
@@ -693,24 +748,24 @@
         <form action="" class="contact__form grid">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="" class="content__label">Name</label>
+              <label for="" class="content__label" data-i18n="label_name">Name</label>
               <input type="text" class="contact__input" />
             </div>
 
             <div class="contact__content">
-              <label for="" class="content__label">Email</label>
+              <label for="" class="content__label" data-i18n="label_email">Email</label>
               <input type="Email" class="contact__input" />
             </div>
           </div>
 
           <div class="contact__content">
-            <label for="" class="content__label">Message</label>
+            <label for="" class="content__label" data-i18n="label_message">Message</label>
             <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
           </div>
 
           <div>
             <a href=" mailto: cristoferchaves36@gmail.com?subject=Testing out mailto! &body=This is only a test!"
-              class="button button--flex">
+              class="button button--flex" data-i18n="send_message_button">
               Send Message
               <i class="uil uil-message button__icon"></i>
             </a>
@@ -725,29 +780,35 @@
     <div class="footer__bg">
       <div class="footer__container container grid">
         <div>
-          <span class="footer__subtitle">Information System Engineering</span>
+          <span class="footer__subtitle" data-i18n="footer_subtitle">Information System Engineering</span>
         </div>
 
         <ul class="footer__links">
           <li>
-            <a href="#home" class="footer__link">Home</a>
+            <a href="#home" class="footer__link" data-i18n="footer_link_home">Home</a>
           </li>
           <li>
-            <a href="#experience" class="footer__link">Experience</a>
+            <a href="#experience" class="footer__link" data-i18n="footer_link_experience">Experience</a>
           </li>
           <li>
-            <a href="#skills" class="footer__link">Technical Skills</a>
+            <a href="#education" class="footer__link" data-i18n="footer_link_education">Education</a>
           </li>
           <li>
-            <a href="#portfolio" class="footer__link">Portfolio</a>
+            <a href="#skills" class="footer__link" data-i18n="footer_link_skills">Technical Skills</a>
           </li>
           <li>
-            <a href="#contact" class="footer__link">Contact-Me</a>
+            <a href="#certifications" class="footer__link" data-i18n="footer_link_certifications">Certifications</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link" data-i18n="footer_link_portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link" data-i18n="footer_link_contact">Contact-Me</a>
           </li>
         </ul>
       </div>
 
-      <p class="footer__copy">&#169; Chritofer Chaves. All right reserved</p>
+  <p class="footer__copy" data-i18n="footer_copy">&#169; Chritofer Chaves. All right reserved</p>
     </div>
   </footer>
 

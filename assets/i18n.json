@@ -1,0 +1,255 @@
+
+{
+  "en": {
+    "logo_name": "Christofer Chaves",
+    "nav_home": "Home",
+    "nav_experience": "Experience",
+    "nav_education": "Education",
+    "nav_skills": "Skills",
+    "nav_certifications": "Certifications",
+    "nav_projects": "Projects",
+    "nav_contact": "Contact-Me",
+
+    "experience_title": "Experience",
+    "experience_subtitle": "My professional journey",
+
+    "education_title": "Education",
+    "education_subtitle": "Academic background",
+
+    "skills_title": "Skills",
+    "skills_subtitle": "My technical level",
+
+    "portfolio_title": "Projects",
+    "portfolio_subtitle": "Most recent work",
+
+    "download_cv": "Download CV",
+    "home_title": "Hi, I'm Christofer Chaves",
+    "home_subtitle": "Information System Engineering",
+    "home_description": "Systems Engineering professional with hands-on experience in web development, focused on enhancing system usability and driving continuous improvements.",
+    "home_scroll_name": "Scroll down",
+
+    "cv_href": "assets/CV Christofer Chaves Pauth EN.pdf",
+
+    "contact_me_button": "Contact me",
+
+    "contact_title": "Contact Me",
+    "contact_subtitle": "Get in touch",
+    "contact_info_title": "Contact Me",
+    "contact_info_email": "Email",
+    "contact_info_location": "Location",
+    "label_name": "Name",
+    "label_email": "Email",
+    "label_message": "Message",
+    "send_message_button": "Send Message",
+
+    "experience__title1": "Full-Stack Software Developer Intern",
+    "exp1_company": "Popular Seguros · San José, Costa Rica",
+    "exp1_date": "Mar 2025 – Jan 2026",
+    "exp1_li_1": "Collaborated in the design and maintenance of Core KADSI and FCSE systems.",
+    "exp1_li_2": "Led FCSE evolution, optimizing performance and scalability.",
+    "exp1_li_3": "Built microservices using C# .NET Core, EF, React, and SASS.",
+    "exp1_li_4": "Worked with Azure Service Bus, WebSockets, Cosmos DB, and Blob Storage.",
+
+    "experience__title2": "FrontEnd Software Developer",
+    "exp2_company": "IDESPO · Heredia, Costa Rica",
+    "exp2_date": "Feb 2023 – Jun 2024",
+    "exp2_li_1": "Designed responsive interfaces with React, CSS, and Bootstrap.",
+    "exp2_li_2": "Improved usability and navigation flow.",
+    "exp2_li_3": "Enhanced performance and accessibility.",
+
+    "experience__title3": "Educational Technology Administrative Assistant",
+    "exp3_company": "Santillana S.A · San José, Costa Rica",
+    "exp3_date1": "Nov 2022 – Feb 2023",
+    "exp3_date2": "Nov 2023 – Feb 2024",
+    "exp3_li_1": "Managed platforms impacting 10,000+ students.",
+    "exp3_li_2": "Optimized access to academic data and reports.",
+    "exp3_li_3": "Worked with regional teams across Central America.",
+
+    "edu1_title": "Bachelor’s Degree in Information Systems (Licentiate Level Program)",
+    "edu1_badge": "Currently",
+    "edu1_institution": "Universidad Nacional de Costa Rica",
+    "edu1_date": "2026 – Present",
+    "edu1_description": "Advanced licentiate-level program oriented toward system architecture, research methodologies, and enterprise-level solutions.",
+
+    "edu2_title": "Bachelor’s Degree in Information Systems",
+    "edu2_badge": "Degree",
+    "edu2_institution": "Universidad Nacional de Costa Rica",
+    "edu2_date": "2021 – 2025",
+    "edu2_description": "Comprehensive academic training focused on software engineering, databases, system analysis, and modern development methodologies.",
+
+    "edu3_title": "Diploma in Application Programming",
+    "edu3_badge": "Diploma",
+    "edu3_institution": "Universidad Nacional de Costa Rica",
+    "edu3_date": "2021 – 2024",
+    "edu3_description": "Practice-oriented program emphasizing software development, algorithms, and programming best practices.",
+
+    "edu4_title": "Technical Degree in Business Informatics",
+    "edu4_badge": "Technical",
+    "edu4_institution": "Colegio Técnico Profesional de Upala",
+    "edu4_date": "2018 – 2020",
+    "edu4_description": "Technical education focused on business systems, IT foundations, and introductory programming concepts.",
+
+    "certifications_title": "Certifications",
+    "certifications_subtitle": "Professional credentials",
+
+    "certification__title1": "Advanced English Certificate",
+
+    "portfolio1_title": "Sports Facilities Management Platform",
+    "portfolio1_description": "This project is a basic application developed in ReactJs that allows sports facility owners to manage their bookings and add new facilities. It provides an intuitive and user-friendly interface for efficient management of these spaces.",
+    "portfolio1_github": "GitHub Repository",
+    "portfolio1_live": "See Live",
+
+    "portfolio2_title": "Dessert App Sales",
+    "portfolio2_description": "A dessert app for customers to browse and buy treats like cakes and cupcakes, with an admin panel to manage orders and products. Built with Spring Boot, Kotlin, PostgreSQL, and Jetpack Compose, and tested using Heroku and Firebase.",
+    "portfolio2_github": "GitHub Repository (You can download apk here)",
+
+    "portfolio3_title": "SegurosInfinite",
+    "portfolio3_description": "SegurosInfinite is a web platform designed for car insurance and policies. This project is developed using C# .Net Core, Javascript, HTML, CSS, Rest API technologies, and MySQL for database management.",
+    "portfolio3_github": "GitHub Repository",
+    "portfolio3_live": "See Live",
+
+    "portfolio4_title": "Virtual Catalog",
+    "portfolio4_description": "Virtual Catalog is a web-based platform designed to manage and showcase a catalog of products and categories efficiently. The project incorporates role-based access control and user management for streamlined product and category operations. Built with ASP.NET Core and React, it focuses on security, scalability, and a seamless user experience.",
+    "portfolio4_github": "GitHub Repository",
+    "portfolio4_live": "See Live",
+
+    "skills_group1_title": "Programming Languages & Frameworks",
+    "skills_group2_title": "Technologies",
+
+    "footer_subtitle": "Information System Engineering",
+    "footer_link_home": "Home",
+    "footer_link_experience": "Experience",
+    "footer_link_education": "Education",
+    "footer_link_skills": "Technical Skills",
+    "footer_link_certifications": "Certifications",
+    "footer_link_portfolio": "Portfolio",
+    "footer_link_contact": "Contact-Me",
+    "footer_copy": "© Christofer Chaves. All rights reserved"
+  },
+  "es": {
+    "logo_name": "Christofer Chaves",
+    "nav_home": "Inicio",
+    "nav_experience": "Experiencia",
+    "nav_education": "Educación",
+    "nav_skills": "Habilidades",
+    "nav_certifications": "Certificaciones",
+    "nav_projects": "Proyectos",
+    "nav_contact": "Contacto",
+
+    "experience_title": "Experiencia",
+    "experience_subtitle": "Mi trayectoria profesional",
+
+    "education_title": "Educación",
+    "education_subtitle": "Formación académica",
+
+    "skills_title": "Habilidades",
+    "skills_subtitle": "Mi nivel técnico",
+
+    "portfolio_title": "Proyectos",
+    "portfolio_subtitle": "Trabajo más reciente",
+
+    "download_cv": "Descargar CV",
+    "home_title": "Hola, soy Christofer Chaves",
+    "home_subtitle": "Ingeniería en Sistemas de Información",
+    "home_description": "Profesional en Ingeniería en Sistemas con experiencia en desarrollo web, enfocado en mejorar la usabilidad y entregar soluciones eficientes. Altamente competente en WordPress, ReactJs, JavaScript, Bootstrap, C# .NET Core, ORM's y Postgres con sólidos conocimientos de microservicios y APIs RESTful, MVVM, MVC, Arquitectura Limpia y Multicapas, experto en utilizar herramientas de automatización como Postman y plataformas de gestión de proyectos como Azure DevOps para optimizar los procesos.",
+    "home_scroll_name": "Desplazarse hacia abajo",
+
+    "cv_href": "assets/CV Christofer Chaves Pauth.pdf",
+
+    "contact_me_button": "Contáctame",
+
+    "contact_title": "Contáctame",
+    "contact_subtitle": "Ponte en contacto",
+    "contact_info_title": "Contacto",
+    "contact_info_email": "Correo electrónico",
+    "contact_info_location": "Ubicación",
+    "label_name": "Nombre",
+    "label_email": "Correo",
+    "label_message": "Mensaje",
+    "send_message_button": "Enviar mensaje",
+
+    "experience__title1": "Pasante Desarrollador de Software Full-Stack",
+    "exp1_company": "Popular Seguros · San José, Costa Rica",
+    "exp1_date": "Mar 2025 – Ene 2026",
+    "exp1_li_1": "Colaboré en el diseño y mantenimiento de los sistemas Core KADSI y FCSE.",
+    "exp1_li_2": "Lideré la evolución de FCSE, optimizando rendimiento y escalabilidad.",
+    "exp1_li_3": "Desarrollé microservicios usando C# .NET Core, EF, React y SASS.",
+    "exp1_li_4": "Trabajé con Azure Service Bus, WebSockets, Cosmos DB y Azure Blob Storage.",
+
+    "experience__title2": "Desarrollador de Software FrontEnd",
+    "exp2_company": "IDESPO · Heredia, Costa Rica",
+    "exp2_date": "Feb 2023 – Jun 2024",
+    "exp2_li_1": "Diseñé interfaces responsivas con React, CSS y Bootstrap.",
+    "exp2_li_2": "Mejoré la usabilidad y el flujo de navegación.",
+    "exp2_li_3": "Aumenté el rendimiento y la accesibilidad.",
+
+    "experience__title3": "Asistente Administrativo de Tecnología Educativa",
+    "exp3_company": "Santillana S.A · San José, Costa Rica",
+    "exp3_date1": "Nov 2022 – Feb 2023",
+    "exp3_date2": "Nov 2023 – Feb 2024",
+    "exp3_li_1": "Administré plataformas que impactaron a más de 10,000 estudiantes.",
+    "exp3_li_2": "Optimicé el acceso a datos académicos e informes.",
+    "exp3_li_3": "Trabajé con equipos regionales en Centroamérica.",
+
+    "edu1_title": "Licenciatura con Enfasis en Sistemas de Información",
+    "edu1_badge": "Actualmente",
+    "edu1_institution": "Universidad Nacional de Costa Rica",
+    "edu1_date": "2026 – Presente",
+    "edu1_description": "Programa de nivel licenciatura orientado a arquitectura de sistemas, metodologías de investigación y soluciones a nivel empresarial.",
+
+    "edu2_title": "Bachillerato en Sistemas de Información",
+    "edu2_badge": "Título",
+    "edu2_institution": "Universidad Nacional de Costa Rica",
+    "edu2_date": "2021 – 2025",
+    "edu2_description": "Formación académica integral enfocada en ingeniería de software, bases de datos, análisis de sistemas y metodologías modernas de desarrollo.",
+
+    "edu3_title": "Diplomado en Programación de Aplicaciones",
+    "edu3_badge": "Diploma",
+    "edu3_institution": "Universidad Nacional de Costa Rica",
+    "edu3_date": "2021 – 2024",
+    "edu3_description": "Programa orientado a la práctica que enfatiza el desarrollo de software, algoritmos y buenas prácticas de programación.",
+
+    "edu4_title": "Título Técnico en Informática Empresarial",
+    "edu4_badge": "Técnico",
+    "edu4_institution": "Colegio Técnico Profesional de Upala",
+    "edu4_date": "2018 – 2020",
+    "edu4_description": "Formación técnica centrada en sistemas de negocios, fundamentos de TI y conceptos introductorios de programación.",
+
+    "certifications_title": "Certificaciones",
+    "certifications_subtitle": "Credenciales profesionales",
+
+    "portfolio1_title": "Plataforma de Gestión de Instalaciones Deportivas",
+    "portfolio1_description": "Aplicación en React para gestionar reservas e instalaciones con una interfaz intuitiva.",
+    "portfolio1_github": "Repositorio en GitHub",
+    "portfolio1_live": "Ver en vivo",
+
+    "portfolio2_title": "Aplicación de ventas de postres",
+    "portfolio2_description": "Aplicación para que los clientes exploren y compren postres como pasteles y cupcakes, con un panel de administración para gestionar pedidos y productos. Construida con Spring Boot, Kotlin, PostgreSQL y Jetpack Compose; probada en Heroku y Firebase.",
+    "portfolio2_github": "Repositorio en GitHub (puedes descargar apk aquí)",
+
+    "portfolio3_title": "SegurosInfinite",
+    "portfolio3_description": "SegurosInfinite es una plataforma web diseñada para seguros de autos y pólizas. El proyecto está desarrollado con C# .Net Core, Javascript, HTML, CSS, APIs REST y MySQL para la gestión de bases de datos.",
+    "portfolio3_github": "Repositorio en GitHub",
+    "portfolio3_live": "Ver en vivo",
+
+    "portfolio4_title": "Catálogo Virtual",
+    "portfolio4_description": "Catálogo Virtual es una plataforma web para gestionar y mostrar un catálogo de productos y categorías de forma eficiente. Incorpora control de acceso por roles y gestión de usuarios. Desarrollado con ASP.NET Core y React, centrado en seguridad y escalabilidad.",
+    "portfolio4_github": "Repositorio en GitHub",
+    "portfolio4_live": "Ver en vivo",
+
+    "skills_group1_title": "Lenguajes de programación y frameworks",
+    "skills_group2_title": "Tecnologías",
+
+    "certification__title1": "Certificado de Inglés Avanzado",
+
+    "footer_subtitle": "Ingeniería en Sistemas de Información",
+    "footer_link_home": "Inicio",
+    "footer_link_experience": "Experiencia",
+    "footer_link_education": "Educación",
+    "footer_link_skills": "Habilidades técnicas",
+    "footer_link_certifications": "Certificaciones",
+    "footer_link_portfolio": "Portafolio",
+    "footer_link_contact": "Contacto",
+    "footer_copy": "© Christofer Chaves. Todos los derechos reservados"
+  }
+}

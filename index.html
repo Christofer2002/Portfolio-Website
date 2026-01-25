@@ -14,7 +14,7 @@
 <body oncontextmenu="return false">
   <header class="header" id="header">
     <nav class="nav container">
-  <a href="#" class="nav__logo" data-i18n="logo_name">Christofer Chaves</a>
+      <a href="#" class="nav__logo" data-i18n="logo_name">Christofer Chaves</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item">
@@ -118,7 +118,8 @@
             </div>
 
             <div class="about__buttons">
-              <a id="cv-download" download="" href="assets/CV Christofer Chaves Pauth EN.pdf" class="button button--flex" data-i18n="download_cv">
+              <a id="cv-download" download="" href="assets/CV Christofer Chaves Pauth EN.pdf"
+                class="button button--flex" data-i18n="download_cv">
                 Download CV<i class="fas fa-download button__icon"></i>
               </a>
             </div>
@@ -130,7 +131,8 @@
             </h3>
             <p class="home__description" data-i18n="home_description">
               Systems Engineering professional with hands-on experience in web development, focused on enhancing system
-              usability and driving continuous improvements. Highly proficient in WordPress, ReactJs, JavaScript, Bootstrap, C# .NET Core, ORM's, and Postgres with strong knowledge
+              usability and driving continuous improvements. Highly proficient in WordPress, ReactJs, JavaScript,
+              Bootstrap, C# .NET Core, ORM's, and Postgres with strong knowledge
               of microservices and RESTful APIs, MVVM, MVC, Clean and Multitier Architecture, Skilled in
               using automation tools like Postman and project management platforms to streamline processes and deliver
               high-quality results.
@@ -157,7 +159,7 @@
       <span class="section__subtitle" data-i18n="experience_subtitle">My professional journey</span>
 
       <div class="experience__container container">
-          <div class="experience__timeline">
+        <div class="experience__timeline">
 
           <!-- Experience 1 -->
           <div class="experience__item">
@@ -167,7 +169,8 @@
               <span class="experience__date" data-i18n="exp1_date">Mar 2025 – Jan 2026</span>
 
               <ul class="experience__list">
-                <li data-i18n="exp1_li_1">Collaborated in the design and maintenance of Core KADSI and FCSE systems.</li>
+                <li data-i18n="exp1_li_1">Collaborated in the design and maintenance of Core KADSI and FCSE systems.
+                </li>
                 <li data-i18n="exp1_li_2">Led FCSE evolution, optimizing performance and scalability.</li>
                 <li data-i18n="exp1_li_3">Built microservices using C# .NET Core, EF, React, and SASS.</li>
                 <li data-i18n="exp1_li_4">Worked with Azure Service Bus, WebSockets, Cosmos DB, and Blob Storage.</li>
@@ -193,7 +196,8 @@
           <!-- Experience 3 -->
           <div class="experience__item">
             <div class="experience__content">
-              <h3 class="experience__title" data-i18n="experience__title3">Educational Technology Administrative Assistant</h3>
+              <h3 class="experience__title" data-i18n="experience__title3">Educational Technology Administrative
+                Assistant</h3>
               <span class="experience__company" data-i18n="exp3_company">Santillana S.A · San José, Costa Rica</span>
               <span class="experience__date" data-i18n="exp3_date1">Nov 2022 – Feb 2023</span>
               <span class="experience__date" data-i18n="exp3_date2">Nov 2023 – Feb 2024</span>
@@ -321,7 +325,7 @@
             <div class="skills__header">
               <i class="fas fa-pencil-ruler skills__icon"></i>
 
-                <div>
+              <div>
                 <h1 class="skills__title" data-i18n="skills_group1_title">Programming Languages & Frameworks</h1>
               </div>
               <i class="uil uil-angle-down skills__arrow"></i>
@@ -745,30 +749,29 @@
           </div>
         </div>
 
-        <form action="" class="contact__form grid">
+        <form class="contact__form grid" id="contactForm">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="" class="content__label" data-i18n="label_name">Name</label>
-              <input type="text" class="contact__input" />
+              <label for="contactName" class="content__label" data-i18n="label_name">Name</label>
+              <input type="text" id="contactName" class="contact__input" required />
             </div>
 
             <div class="contact__content">
-              <label for="" class="content__label" data-i18n="label_email">Email</label>
-              <input type="Email" class="contact__input" />
+              <label for="contactEmail" class="content__label" data-i18n="label_email">Email</label>
+              <input type="email" id="contactEmail" class="contact__input" required />
             </div>
           </div>
 
           <div class="contact__content">
-            <label for="" class="content__label" data-i18n="label_message">Message</label>
-            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+            <label for="contactMessage" class="content__label" data-i18n="label_message">Message</label>
+            <textarea id="contactMessage" cols="0" rows="7" class="contact__input" required></textarea>
           </div>
 
           <div>
-            <a href=" mailto: cristoferchaves36@gmail.com?subject=Testing out mailto! &body=This is only a test!"
-              class="button button--flex" data-i18n="send_message_button">
+            <button type="button" class="button button--flex" id="sendMessageBtn" data-i18n="send_message_button">
               Send Message
               <i class="uil uil-message button__icon"></i>
-            </a>
+            </button>
           </div>
         </form>
       </div>
@@ -808,7 +811,7 @@
         </ul>
       </div>
 
-  <p class="footer__copy" data-i18n="footer_copy">&#169; Chritofer Chaves. All right reserved</p>
+      <p class="footer__copy" data-i18n="footer_copy">&#169; Chritofer Chaves. All right reserved</p>
     </div>
   </footer>
 
@@ -818,8 +821,10 @@
   </a>
 
   <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
-  <script src="assets/ptj.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>  <script src="assets/ptj.js"></script>
+  <script src="assets/contactForm.js" defer></script>
 </body>
 
 </html>

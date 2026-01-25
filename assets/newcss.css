@@ -1146,7 +1146,7 @@ img {
 /*======================== Media Queries ======================*/
 
 /* For Small Devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1161,7 +1161,17 @@ img {
   }
 
   .home__content {
-    grid-template-columns: 0.25fr 3fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .home__data {
+    grid-column: 1;
+  }
+
+  .home__social {
+    justify-self: start;
   }
 
   .home__blob {
@@ -1194,6 +1204,10 @@ img {
 
   .project__img {
     width: 200px;
+  }
+
+  .contact {
+    margin-top: 5rem;
   }
 }
 
@@ -1312,7 +1326,7 @@ img {
     justify-content: space-between;
   }
   .about__buttons {
-    justify-content: initial;
+    justify-content: center;
   }
 
   .skills__icon,

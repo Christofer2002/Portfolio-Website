@@ -145,6 +145,9 @@ window.addEventListener("scroll", scrollUp);
 /*==================== DARK LIGHT THEME ====================*/
 // Dark theme and icon class names
 const themeButton = document.getElementById("theme-button");
+// tippy instances for tooltips (initialized after translations load)
+let themeTippyInstance = null;
+let langTippyInstance = null;
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
 
@@ -230,6 +233,39 @@ function setLanguage(lang) {
 
   if (langToggle) langToggle.textContent = lang === "en" ? "ES" : "EN";
   localStorage.setItem("language", lang);
+
+  // Set tooltip and accessible label for theme and language controls
+  try {
+    const themeTooltip = translations[lang] && translations[lang].tooltip_theme ? translations[lang].tooltip_theme : '';
+    const langTooltip = translations[lang] && translations[lang].tooltip_language ? translations[lang].tooltip_language : '';
+
+    if (themeButton) {
+      themeButton.setAttribute('title', themeTooltip);
+      themeButton.setAttribute('aria-label', themeTooltip);
+      // initialize or update tippy
+      if (window.tippy) {
+        if (themeTippyInstance) {
+          themeTippyInstance.setContent(themeTooltip);
+        } else {
+          themeTippyInstance = tippy(themeButton, { content: themeTooltip, delay: [0, 0], placement: 'bottom', arrow: true, theme: 'light' });
+        }
+      }
+    }
+
+    if (langToggle) {
+      langToggle.setAttribute('title', langTooltip);
+      langToggle.setAttribute('aria-label', langTooltip);
+      if (window.tippy) {
+        if (langTippyInstance) {
+          langTippyInstance.setContent(langTooltip);
+        } else {
+          langTippyInstance = tippy(langToggle, { content: langTooltip, delay: [0, 0], placement: 'bottom', arrow: true, theme: 'light' });
+        }
+      }
+    }
+  } catch (e) {
+    // ignore
+  }
 
   // Update CV download link href if provided in translations
   try {

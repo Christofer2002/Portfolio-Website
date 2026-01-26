@@ -28,6 +28,9 @@
     "home_description": "Systems Engineering professional with experience in web development, focused on enhancing usability and delivering efficient solutions. Highly skilled in WordPress, ReactJs, JavaScript, Bootstrap, C# .NET Core, ORM frameworks, and PostgreSQL, with strong knowledge of microservices and RESTful APIs, MVVM, MVC, Clean Architecture, and Multilayer Architecture. Expert in using automation tools such as Postman and project management platforms like Azure DevOps to optimize processes.",
     "home_scroll_name": "Scroll down",
 
+    "tooltip_theme": "Toggle dark / light theme",
+    "tooltip_language": "Toggle language",
+
     "cv_href": "assets/CV Christofer Chaves Pauth EN.pdf",
 
     "contact_me_button": "Contact me",
@@ -35,12 +38,12 @@
     "contact_title": "Contact Me",
     "contact_subtitle": "Get in touch",
     "contact_info_title": "Contact Me",
-    "contact_info_email": "Email",
+    "contact_info_email": "My Email",
     "contact_info_location": "Location",
-    "label_name": "Name",
-    "label_email": "Email",
-    "label_message": "Message",
-    "send_message_button": "Send Message",
+    "label_name": "Your name",
+    "label_email": "Your email",
+    "label_message": "Your message",
+    "send_message_button": "Send Email",
     "notif_fill_fields": "Please fill in all fields",
     "notif_invalid_email": "Please enter a valid email address",
     "notif_service_error": "Error loading mail service",
@@ -99,6 +102,8 @@
     "certifications_subtitle": "Professional credentials",
 
     "certification__title1": "Advanced English Certificate",
+    "certification__operador_ti_title": "IT Operator",
+    "certification__operador_ti_issuer": "Instituto Nacional de Aprendizaje (INA) · 2022",
 
     "portfolio1_title": "Sports Facilities Management Platform",
     "portfolio1_description": "This project is a basic application developed in ReactJs that allows sports facility owners to manage their bookings and add new facilities. It provides an intuitive and user-friendly interface for efficient management of these spaces.",
@@ -122,7 +127,7 @@
     "skills_group1_title": "Programming Languages & Frameworks",
     "skills_group2_title": "Technologies",
 
-    "footer_subtitle": "Information System Engineering",
+    "footer_subtitle": "Information Systems Engineer",
     "footer_link_home": "Home",
     "footer_link_experience": "Experience",
     "footer_link_education": "Education",
@@ -156,9 +161,12 @@
 
     "download_cv": "Descargar CV",
     "home_title": "Hola, soy Christofer Chaves",
-    "home_subtitle": "Ingeniería en Sistemas de Información",
+    "home_subtitle": "Ingeniero en Sistemas de Información",
     "home_description": "Profesional en Ingeniería en Sistemas con experiencia en desarrollo web, enfocado en mejorar la usabilidad y entregar soluciones eficientes. Altamente competente en WordPress, ReactJs, JavaScript, Bootstrap, C# .NET Core, ORM's y Postgres con sólidos conocimientos de microservicios y APIs RESTful, MVVM, MVC, Arquitectura Limpia y Multicapas, experto en utilizar herramientas de automatización como Postman y plataformas de gestión de proyectos como Azure DevOps para optimizar los procesos.",
     "home_scroll_name": "Desplazarse hacia abajo",
+
+    "tooltip_theme": "Alternar modo oscuro/claro",
+    "tooltip_language": "Cambiar idioma",
 
     "cv_href": "assets/CV Christofer Chaves Pauth.pdf",
 
@@ -167,12 +175,12 @@
     "contact_title": "Contáctame",
     "contact_subtitle": "Ponte en contacto",
     "contact_info_title": "Contacto",
-    "contact_info_email": "Correo electrónico",
+    "contact_info_email": "Mi correo electrónico",
     "contact_info_location": "Ubicación",
-    "label_name": "Nombre",
-    "label_email": "Correo",
-    "label_message": "Mensaje",
-    "send_message_button": "Enviar mensaje",
+    "label_name": "Tu nombre",
+    "label_email": "Tu correo electrónico",
+    "label_message": "Tu mensaje",
+    "send_message_button": "Enviar Email",
     "notif_fill_fields": "Por favor completa todos los campos",
     "notif_invalid_email": "Por favor ingresa un correo válido",
     "notif_service_error": "Error al cargar el servicio de correo",
@@ -230,6 +238,9 @@
     "certifications_title": "Certificaciones",
     "certifications_subtitle": "Credenciales profesionales",
 
+    "certification__operador_ti_title": "Operador de TI",
+    "certification__operador_ti_issuer": "Instituto Nacional de Aprendizaje (INA) · 2022",
+
     "portfolio1_title": "Plataforma de Gestión de Instalaciones Deportivas",
     "portfolio1_description": "Aplicación en React para gestionar reservas e instalaciones con una interfaz intuitiva.",
     "portfolio1_github": "Repositorio en GitHub",
@@ -254,7 +265,7 @@
 
     "certification__title1": "Certificado de Inglés Avanzado",
 
-    "footer_subtitle": "Ingeniería en Sistemas de Información",
+    "footer_subtitle": "Ingeniero en Sistemas de Información",
     "footer_link_home": "Inicio",
     "footer_link_experience": "Experiencia",
     "footer_link_education": "Educación",

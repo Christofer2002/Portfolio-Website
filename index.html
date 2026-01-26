@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/newcss.css" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
 </head>
 
 <body oncontextmenu="return false">
@@ -127,7 +128,7 @@
           <div class="home__data">
             <h1 class="home__title" data-i18n="home_title">Hi, I'm Christofer Chaves</h1>
             <h3 class="home__subtitle" data-i18n="home_subtitle">
-              Information System Engineering
+              Information Systems Engineer
             </h3>
             <p class="home__description" data-i18n="home_description">
               Systems Engineering professional with hands-on experience in web development, focused on enhancing system
@@ -321,7 +322,7 @@
       <div class="skills__container container grid">
         <div>
           <!--==================== Skill 1 =================-->
-          <div class="skills__content skills__open">
+            <div class="skills__content skills__close">
             <div class="skills__header">
               <i class="fas fa-pencil-ruler skills__icon"></i>
 
@@ -502,6 +503,14 @@
             <span class="certification__issuer">
               Cisco Networking Academy · 2024
             </span>
+          </div>
+        </div>
+
+        <div class="certification__item">
+          <i class="uil uil-laptop certification__icon"></i>
+          <div>
+            <h3 class="certification__title" data-i18n="certification__operador_ti_title">Operador de TI</h3>
+            <span class="certification__issuer" data-i18n="certification__operador_ti_issuer">Instituto Nacional de Aprendizaje (INA) · 2022</span>
           </div>
         </div>
 
@@ -752,24 +761,24 @@
         <form class="contact__form grid" id="contactForm">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="contactName" class="content__label" data-i18n="label_name">Name</label>
+              <label for="contactName" class="content__label" data-i18n="label_name">Your Name</label>
               <input type="text" id="contactName" class="contact__input" required />
             </div>
 
             <div class="contact__content">
-              <label for="contactEmail" class="content__label" data-i18n="label_email">Email</label>
+              <label for="contactEmail" class="content__label" data-i18n="label_email">Your Email</label>
               <input type="email" id="contactEmail" class="contact__input" required />
             </div>
           </div>
 
           <div class="contact__content">
-            <label for="contactMessage" class="content__label" data-i18n="label_message">Message</label>
+            <label for="contactMessage" class="content__label" data-i18n="label_message">Your Message</label>
             <textarea id="contactMessage" cols="0" rows="7" class="contact__input" required></textarea>
           </div>
 
           <div>
-            <button type="button" class="button button--flex" id="sendMessageBtn" data-i18n="send_message_button">
-              Send Message
+            <button type="button" class="button button--flex button--small portfolio__button" id="sendMessageBtn" data-i18n="send_message_button">
+              Send Email
               <i class="uil uil-message button__icon"></i>
             </button>
           </div>
@@ -783,7 +792,7 @@
     <div class="footer__bg">
       <div class="footer__container container grid">
         <div>
-          <span class="footer__subtitle" data-i18n="footer_subtitle">Information System Engineering</span>
+          <span class="footer__subtitle" data-i18n="footer_subtitle">Information Systems Engineer</span>
         </div>
 
         <ul class="footer__links">
@@ -823,7 +832,10 @@
   <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>  <script src="assets/ptj.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy.umd.min.js"></script>
+  <script src="assets/ptj.js"></script>
   <script src="assets/contactForm.js" defer></script>
 </body>
 
